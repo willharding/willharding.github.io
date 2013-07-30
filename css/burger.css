@@ -1,0 +1,177 @@
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  01 Colors -- Thanks Jackson!  (jxnblk.com/spectral)  ------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+
+.white { color: #fff; }
+.bg-white { background-color: #fff; }
+.peaches { color: #f2bb1a; }
+.bg-peaches { background-color: #f2bb1a; }
+.cream { color: #efede6; }
+.bg-cream { background-color: #efede6; }
+.mint { color: #59bf9a; }
+.bg-mint { background-color: #59bf9a; }
+.slate { color: #6d6d6d; }
+.bg-slate { background-color: #6d6d6d; }
+.stone { color: #a8a8a0; }
+.bg-stone { background-color: #a8a8a0; }
+.toast { color: #93701e; }
+.bg-toast { background-color: #93701e; }
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  02 Typography ---------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+
+html 		{ font-size: 62.5%; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+html, body 	{-webkit-text-size-adjust: 100%;}
+h1			{ font-size: 4.0rem; line-height: 4.8rem; }
+h2  		{ font-size: 3.2rem; line-height: 4.0rem; }
+h3  		{ font-size: 2.2rem; line-height: 3.0rem; font-weight: 400;}
+h4  		{ font-size: 1.8rem; line-height: 3.0rem; font-weight: 400;}
+h5  		{ font-size: 1.8rem; line-height: 2.1rem; font-family: 'Noto Serif', serif; }
+p			{ font-size: 1.6rem; line-height: 2.0rem; font-family: 'Noto Serif', serif;}
+
+@media screen and (max-width: 650px) {
+	h1 {font-size: 2.8rem; line-height: 3.2rem; text-align: center;}
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  03 Layout Essentials   ------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+
+body 		{background:   #fff; margin: 0; padding: 0;}
+header 		{display: block; background-color: #f2bb1a; }
+.alpha-pos 		{float: left;}
+.beta-pos		{float: right;}
+.foliorow img	{display: block; width: 100%;}
+
+.wrap {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.feature-item:before,
+.feature-item:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.feature-item:after {clear: both;}
+.feature-item {background-color: #fff:}
+.feature-item.alt {background-color: #efede6;}	
+.feature-item figure {width: 59%; display: block;}
+.feature-item figure img {width: 100%; display: block;}
+.feature-item .desc {width:36%; display: block;}
+
+.desc {
+	font-family: 'Montserrat', sans-serif;
+}
+.desc h2 {
+	font-weight: 700;font-size: 3.2rem; line-height: 4.0rem;
+}
+.desc p {
+	font-weight: 400;font-size: 2.2rem; line-height: 3.0rem;
+}
+
+@media screen and (max-width: 650px) {	
+	header {text-align: center;}
+
+	.feature-item .desc, .feature-item figure {width: 100%; float: none;}
+	
+	.alpha-pos {
+		float: none;
+	}
+	
+	.beta-pos {
+		float:none;
+	}
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  05 Navigation ---------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+.primary-nav {
+	float: right; display: inline-block; margin: 0; font-family: 'Montserrat', sans-serif; font-size: 1.6rem; text-transform: uppercase; list-style: none;
+}
+
+.primary-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.primary-nav li {
+	margin: 0 20px 0 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+nav a {
+	padding: 0;
+	text-decoration: none;
+	color: #93701e;
+	line-height: 100%;
+}
+nav a:hover {
+	color: #fff;
+}
+nav .current a {
+	color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+	nav {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		min-height: 40px;
+		background-image:url("http://byrdhaus.com/dotcom/images/burger.png");
+		background-repeat:no-repeat;
+		background-position:center top;
+	}	
+	.primary-nav ul {
+		width: 100%;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.primary-nav li {
+		position: absolute;
+		display: block;
+		left: -9999px;
+		margin: 0;
+	}
+	.primary-nav .current {
+		position: static;
+		display: none;
+	}
+	.primary-nav a {
+		position: static;
+		padding: 8px 8px 8px 8px;
+		text-align: left;
+		color: #fff
+	}
+	.primary-nav .current a {
+		background: none;
+		color: #fff;
+	}
+
+	/* on nav hover */
+	.primary-nav ul:hover {
+		background-image: none;
+		background: #93701e;
+	}
+	.primary-nav ul:hover li {
+		position: static;
+		margin: 0 0 5px;
+	}
+	.primary-nav ul:hover .current {
+		background: #93701e;
+	}
+

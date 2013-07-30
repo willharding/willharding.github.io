@@ -1,0 +1,278 @@
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  01 Colors -- Thanks Jackson!  (jxnblk.com/spectral)  ------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+
+.white { color: #fff; }
+.bg-white { background-color: #fff; }
+.peaches { color: #f2bb1a; }
+.bg-peaches { background-color: #f2bb1a; }
+.cream { color: #efede6; }
+.bg-cream { background-color: #efede6; }
+.mint { color: #59bf9a; }
+.bg-mint { background-color: #59bf9a; }
+.slate { color: #6d6d6d; }
+.bg-slate { background-color: #6d6d6d; }
+.stone { color: #a8a8a0; }
+.bg-stone { background-color: #a8a8a0; }
+.toast { color: #93701e; }
+.bg-toast { background-color: #93701e; }
+.whale { color: #262626;}
+.bg-whale { background-color: #262626; }
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  02 Typography ---------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+
+html 		{ font-size: 62.5%; font-family: 'Montserrat', sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased;}
+html, body 	{-webkit-text-size-adjust: 100%;}
+h1			{ font-size: 4.0rem; line-height: 5.2rem; color: #fff; font-weight: 600; padding-top: 20px; }
+h2  		{ font-size: 3.2rem; line-height: 4.0rem; font-weight: 600; }
+h3  		{ font-size: 2.2rem; line-height: 3.0rem; }
+h4  		{ font-size: 1.8rem; line-height: 3.0rem; }
+h5  		{ font-size: 1.8rem; line-height: 2.1rem; }
+p			{ font-size: 1.6rem; line-height: 2.0rem; }
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  03 Layout Essentials   ------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+
+body 		{ background:   #fff; margin: 0; padding: 0;}
+header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px; }
+.alpha-pos 		{ float: left;}
+.beta-pos		{ float: right;}
+.foliorow img	{ display: block; width: 100%;}
+
+.nav-wrap {
+	width: 95%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.wrap {
+	width: 95%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.feature-item:before,
+.feature-item:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.feature-item:after { clear: both;}
+.feature-item { background-color: #fff:}
+.feature-item.alt { background-color: #efede6;}	
+.feature-item figure { width: 59%; display: block;}
+.feature-item figure img { width: 100%; max-width: 600px; display: block; padding: 16px 0px 32px 0px;}
+.feature-item .desc { width:36%; display: block;}
+.feature-item .desc h2 { padding-top: 40px;}
+.feature-item .desc h3 { padding-bottom: 20px;}
+.feature-item .desc p { padding-bottom: 20px; }
+
+.case-study .article { width: 59%%; display: block; float: right;}
+.case-study figure img { width: 100%; max-width: 960px; display: block; padding: 12px 0px 12px 0px;}
+.case-study .desc { width:36%; display: block; float: left;}
+
+
+.desc {
+	font-family: 'Montserrat', sans-serif;
+}
+.desc h2 {
+	font-weight: 600; font-size: 3.2rem; line-height: 4.0rem; color: #6d6d6d; padding: 0; margin: 0;
+}
+.desc h3 {
+	font-weight: 400; font-size: 2.2rem; line-height: 3.0rem; color: #a8a8a0; padding: 0; margin: 0;
+}
+
+.article {
+	font-family: 'Noto+Serif', serif;
+}
+.article h4 {
+	font-weight: 700; font-size: 2.4rem; line-height: 3.2rem; color: #f2bb1a; font-style: italic; padding: 0px; margin: 0;
+}
+.article p {
+	font-weight: 400; font-size: 1.8rem; line-height: 2.8rem; color: #6d6d6d; padding: 12px 0px; margin: 0;
+}
+
+.tags {
+	font-weight: 400; font-size: 1.4rem; line-height: 2.0rem; color: #59bf9a; padding: 0; margin: 0;
+}
+
+
+.btn {
+	border:4px solid #59bf9a;
+	padding:1em 4rem;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-opera-border-radius:8px;
+	-khtml-border-radius:8px;
+	border-radius:8px;
+	font-family: 'Montserrat', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 1.4rem;
+	color: #59bf9a;
+	text-decoration: none;
+	-moz-box-shadow: 0px 8px 0px #59bf9a;
+	-webkit-box-shadow: 0px 8px 0px #59bf9a;
+	box-shadow: 0px 8px 0px #59bf9a;
+}
+.btn:hover {
+	border:4px solid #6d6d6d;
+	color: #6d6d6d;
+	-moz-box-shadow: 0px 8px 0px #6d6d6d;
+	-webkit-box-shadow: 0px 8px 0px #6d6d6d;
+	box-shadow: 0px 8px 0px #6d6d6d;
+}
+
+
+@media screen and (max-width: 650px) {	
+	.nav-wrap {
+		width: 100%;
+	}
+	
+	.wrap {
+		width: 90%;
+	}
+	
+	header {
+		text-align: center;
+		padding: 0px 0px 4px 0px;
+	}
+	
+	.feature-item .desc, .feature-item figure, .case-study .desc, .case-study .article {
+		width: 100%; float: none;	
+	}
+
+	.feature-item .desc h2 { padding-top: 0px;}
+	.feature-item .desc h3 { padding-bottom: 0px;}
+
+	.alpha-pos {
+		float: none;
+	}
+	
+	.beta-pos {
+		float:none;
+	}
+	
+	h1 {
+		font-size: 2.4rem; line-height: 2.8rem; padding-top: 0px;
+	}
+	
+	.feature-item figure img { 
+		width: 100%; padding: 16px 0px 16px 0px;
+	}
+	
+	.desc h2 {
+		font-size: 2.4rem; line-height: 2.8rem; color: #6d6d6d; padding: 0; margin: 0px 0px 6px 0px;
+	}
+	
+	.desc h3 {
+		font-size: 1.8rem; line-height: 2.2rem; color: #a8a8a0; padding: 0; margin: 0px 0px 12px 0px;
+	}
+	
+	.feature-item .desc p { padding-bottom: 10px; }
+	
+	.article h4 {
+		font-weight: 700; font-size: 2.2rem; line-height: 2.8rem; color: #f2bb1a; font-style: italic; padding: 0px; margin: 0;
+	}
+	.article p {
+		font-weight: 400; font-size: 1.8rem; line-height: 2.4rem; color: #6d6d6d; padding: 8px 0px; margin: 0;
+	}
+
+	
+	.btn {
+		display: block;
+		width: 100%;
+		padding: 1rem 0rem;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+  05 Navigation ---------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------- */
+.primary-nav {
+	float: right; margin: 70px 0 0 0; font-family: 'Montserrat', sans-serif; font-size: 1.4rem; text-transform: uppercase; list-style: none; font-weight: 600;	
+
+}
+
+.primary-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.primary-nav li {
+	margin: 0 20px 0 0;
+	padding: 0;
+	display:inline-block;
+	list-style: none;
+}
+.primary-nav a {
+	padding: 0;
+	text-decoration: none;
+	color: #93701e;
+	line-height: 100%;
+}
+.primary-nav a:hover {
+	color: #fff;
+}
+.primary-nav .current a {
+	color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+	.primary-nav {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		min-height: 48px;
+		background: #93701e url(../images/menuBtn.svg) no-repeat 10px 11px;
+		margin: 0 auto;
+		text-align: center;
+	}	
+	.primary-nav ul {
+		width: 100%;
+		padding: 0;
+		position: static;
+		top: 0;
+		left: 0;
+	}
+	.primary-nav li {
+		position: absolute;
+		display: block;
+		left: -9999px;
+		margin: 0;
+		padding-top: 16px;
+	}
+	.primary-nav .current {
+		position: static;
+	}
+	.primary-nav a {
+		position: static;
+		text-align: left;
+		color: #f2bb1a;
+	}
+	.primary-nav .current a {
+		background: none;
+		color: #fff;
+	}
+
+	/* on nav hover */
+	.primary-nav ul:hover {
+		background-image: none;
+		background: #93701e;
+	}
+	.primary-nav ul:hover li {
+		position: static;
+		margin: 0 0 24px;
+	}
+	.primary-nav ul:hover .current {
+		background: #93701e;
+	}
+

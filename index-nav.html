@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Will Harding, UX Designer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Montserrat:400,600,700' rel='stylesheet' type='text/css'>
+    
+	<script src="js/modernizr.js"></script>
+	<script src="js/respond.js"></script>
+ 
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<script src="js/responsive-nav.js"></script>
+
+</head>
+  <body>
+  <div class="nav-wrap">
+	<div id="nav" class="primary-nav">
+	  <ul>
+	    <li class="current"><a href="#">Home</a></li>
+	    <li><a href="#">Work</a></li>
+	    <li><a href="#">Words</a></li>
+	    <li><a href="#">About</a></li>
+	  </ul>
+	</div>
+  </div>	
+    <header>
+      <div class="wrap">
+        <a href="#" title="Home">
+          <img src="images/avatar.svg" alt="Will Harding Avatar" style="padding-top: 16px;">
+        </a>
+        <h1>Will Harding, a UX Designer based in Washington D.C.</h1>
+      </div><!-- end: .wrap -->
+    </header>
+    <section class="feature-item">
+      <div class="wrap">
+        <figure class="beta-pos">
+          <img src="images/lsConsumer.png" alt="LivingSocial iOS app">
+        </figure>
+        <div class="desc alpha-pos">
+          <h2>LivingSocial iOS app for consumers</h2>
+          <h3>Create an experience for our users that they want to open everyday.</h3>
+          <p><a href="#" class="btn">See more</a></p>
+        </div> <!-- end: .desc -->
+      </div> <!-- end: .wrap -->
+    </section>
+    <section class="feature-item alt">
+      <div class="wrap">
+        <figure class="alpha-pos pic">
+          <img src="images/lsConsumer.png" alt="LivingSocial iOS app">
+        </figure>
+        <div class="desc beta-pos">
+          <h2>Merchant Center iOS app</h2>
+          <h3>LivingSocial merchants need tools to track their deal performance on the go.</h3>
+          <p><a href="#" class="btn">See more</a></p>
+        </div> <!-- end: .desc -->
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <div class="tweets">
+          <!-- [TWEETS HERE] -->
+        </div> <!-- end: .tweets -->
+      </div> <!-- end: .wrap -->
+    </section>
+  <footer>
+  <!-- FOOTER HERE  -->
+  </footer>
+    <script>
+    if (!Modernizr.svg) {
+		$(".logo img").attr("src", "images/logo.png");
+	}
+	</script>
+  	<script>
+	var navigation = responsiveNav("#nav");
+	</script>
+</body>
+</html>
