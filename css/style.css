@@ -67,6 +67,7 @@ header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px
 .feature-item:after { clear: both;}
 .feature-item { background-color: #fff:}
 .feature-item.alt { background-color: #efede6;}	
+.feature-item.tweet { background-color: #6d6d6d; text-align: center; padding: 56px 20px; word-wrap: break-word; }	
 .feature-item figure { width: 59%; display: block;}
 .feature-item figure img { width: 100%; max-width: 600px; display: block; padding: 16px 0px 32px 0px;}
 .feature-item .desc { width:36%; display: block;}
@@ -77,6 +78,12 @@ header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px
 .case-study .article { width: 59%%; display: block; float: right;}
 .case-study figure img { width: 100%; max-width: 960px; display: block; padding: 12px 0px 12px 0px;}
 .case-study .desc { width:36%; display: block; float: left;}
+
+.feature-item.tweet h1 { font-size: 1.6rem; line-height: 2.1rem; font-weight: 400; color: #96958c; text-transform: uppercase;}	
+.feature-item.tweet p { font-size: 3.2rem; line-height: 4.0rem; font-weight: 600; color: #fff; }	
+.feature-item.tweet a { color: #59bf9a; text-decoration: none; }
+.feature-item.tweet a:hover { color: #f2bb1a; }
+
 
 
 .desc {
@@ -105,6 +112,7 @@ header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px
 
 
 .btn {
+	position: relative;
 	border:4px solid #59bf9a;
 	padding:1em 4rem;
 	-moz-border-radius:8px;
@@ -118,15 +126,26 @@ header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px
 	-moz-box-shadow: 0px 8px 0px #59bf9a;
 	-webkit-box-shadow: 0px 8px 0px #59bf9a;
 	box-shadow: 0px 8px 0px #59bf9a;
-}
-.btn:hover {
-	border:4px solid #6d6d6d;
-	color: #6d6d6d;
-	-moz-box-shadow: 0px 8px 0px #6d6d6d;
-	-webkit-box-shadow: 0px 8px 0px #6d6d6d;
-	box-shadow: 0px 8px 0px #6d6d6d;
+	-webkit-transition: all .05s linear;
 }
 
+.btn:hover {
+	
+	top: 3px;
+	border:4px solid #6d6d6d;
+	color: #6d6d6d;
+	-moz-box-shadow: 0px 5px 0px #6d6d6d;
+	-webkit-box-shadow: 0px 5px 0px #6d6d6d;
+	box-shadow: 0px 5px 0px #6d6d6d;
+}
+
+.btn:active {
+	position: relative;
+	top: 6px;
+	-moz-box-shadow: 0px 2px 0px #6d6d6d;
+	-webkit-box-shadow: 0px 2px 0px #6d6d6d;
+	box-shadow: 0px 2px 0px #6d6d6d;
+}
 
 @media screen and (max-width: 650px) {	
 	.nav-wrap {
@@ -139,7 +158,7 @@ header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px
 	
 	header {
 		text-align: center;
-		padding: 0px 0px 4px 0px;
+		padding: 0px 0px 12px 0px;
 	}
 	
 	.feature-item .desc, .feature-item figure, .case-study .desc, .case-study .article {
@@ -148,6 +167,11 @@ header 		{ display: block; background-color: #f2bb1a; padding: 36px 0px 30px 0px
 
 	.feature-item .desc h2 { padding-top: 0px;}
 	.feature-item .desc h3 { padding-bottom: 0px;}
+	
+	.feature-item.tweet { padding: 30px 10px; }	
+	.feature-item.tweet h1 { font-size: 1.4rem; line-height: 1.8rem;}	
+	.feature-item.tweet p { font-size: 2.1rem; line-height: 2.6rem; }	
+
 
 	.alpha-pos {
 		float: none;
